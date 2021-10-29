@@ -9,6 +9,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/timeline.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Thinktank Battle 2021</title>
     <style>
@@ -16,6 +20,28 @@
 
         body {
             font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-weight: 900;
+        }
+
+        .bg-primary {
+            background: #243972 !important;
+        }
+
+        .bg-info {
+            background: #fcf7f4 !important;
+            border: 1px solid #f7e8e0;
+        }
+
+        .color1 {
+            color: #243972;
+        }
+
+        .color2 {
+            color: #FCAE42;
         }
 
         .nav-link {
@@ -40,7 +66,7 @@
         }
 
         .btn-warning {
-            background: #F89E08;
+            background: #FCAE42;
         }
 
         .bg-navbar1 {
@@ -65,7 +91,7 @@
         .title {
             font-weight: 800;
             font-size: 60px !important;
-            color: #F89E08;
+            color: #FCAE42;
         }
 
         .sub-title {
@@ -89,7 +115,107 @@
         }
 
         #coach {
-            height: 100vh;
+            height: 80vh;
+            background: #263774;
+        }
+
+        .card-allin {
+            background: #1a2655;
+            border-bottom: 10px solid #FCAE42;
+        }
+
+        .card-desc {
+            padding: 5% 5px;
+            line-height: 1.5em;
+            width: 65%;
+            font-size: 17px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .card-image-r img {
+            position: absolute;
+            width: 40%;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        .card-image-l img {
+            position: absolute;
+            width: 40%;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        #prizes {
+            margin-top: -10%;
+            padding-top: 10%;
+            padding-bottom: 10%;
+            min-height: 100vh;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(74deg, rgba(255, 255, 255, 1) 0%, rgba(235, 243, 252, 1) 100%);
+        }
+
+        .term-title {
+            font-size: 20px !important;
+            background: #ea9d38;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .term-body {
+            font-size: 18px !important;
+        }
+
+        /* .accordion-item:first-of-type .term-title {
+            background: #ea9d38 !important;
+            color: #000 !important;
+        } */
+
+        /* .accordion-item:last-of-type .term-title {
+            background: #ea9d38 !important;
+            color: #fff !important;
+        } */
+
+        .list-allin {
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+        }
+
+        #timeline {
+            min-height: 100vh;
+            background: #263774;
+            margin-top: -5%;
+        }
+
+        #faq {
+            min-height: 100vh;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #fff !important;
+            background: #263774 !important;
+        }
+
+        .accordion-button {
+            color: #fff !important;
+            background: #ea9d38 !important;
+        }
+
+        footer {
+            background: #263774;
+            color: white !important;
+            font-size: 16px !important;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white !important;
+        }
+
+        footer a:hover {
+            color: #ea9d38 !important;
         }
     </style>
 </head>
@@ -134,7 +260,7 @@
                     <h1 class="text-uppercase title">Investment <br> Analysis
                         Challenge</h1>
                     <h3 class="mb-5 sub-title">Online Competition, 06 - 18 December 2021</h3>
-                    <h5 class="mb-5 desc">
+                    <h5 class="mb-4 desc">
                         <hr width="30%">
                         Get hands-on professional coaching from PanenSAHAM and win prizes with a total worth Rp2.6
                         million!
@@ -145,30 +271,628 @@
                     </h5>
                     <img src="assets/img/ELigibility.webp" class="eligibility">
                     <a href="#" class="btn btn-primary">Register Now</a>
-                    <div class="mt-5">
-                        <img src="assets/img/logo all-in .webp" width="15%" class="pe-3">
-                        <img src="assets/img/logo panen saham.webp" width="25%">
+                    <div class="mt-4">
+                        <img src="assets/img/logo all-in .webp" width="20%" class="pe-3">
+                        <img src="assets/img/logo panen saham.webp" width="30%">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/img/List atas + koin.webp" width="100%" style="margin-top:-60px;">
+    </div>
+
+    <div id="coach">
+        <div class="container pt-5">
+            <div class="row mt-5">
+                <div class="col-md-12 mb-5 text-center">
+                    <h2 class="color2">COACHED BY THE EXPERTS</h2>
+                </div>
+                <div class="my-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card shadow card-allin">
+                        <div class="card-body ">
+                            <div class="card-image-r">
+                                <img src="assets/img/fath.webp">
+                            </div>
+                            <div class="card-desc">
+                                Fath has more than 14 years of experience in the Financial Industry. He serves as
+                                the Head of Research of Carmel Anugerah Mandiri.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <a href="#">
+                        <div class="card" style="width: 100%;">
+                            <div class="card-body text-center m-5">
+                                <img src="assets/img/Panen saham youtube.webp" width="100%">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 text-end d-flex align-items-stretch">
+                    <div class="card shadow card-allin">
+                        <div class="card-body">
+                            <div class="card-image-l">
+                                <img src="assets/img/Anthony.webp">
+                            </div>
+                            <div class="card-desc float-end">
+                                With more than 17 years of experience in the Financial Industry, Anthony serves as the
+                                Director of Carmel Sekuritas
+                                Nusantara (CSN) and holds an advisor role in several intergroup companies.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div id="coach">
-
-    </div>
+    <img src="assets/img/List bawah .webp" width="100%" style="margin-top: -10%;">
 
     <div id="prizes">
-
+        <div class="container mt-5">
+            <div class="row mt-5">
+                <div class="col-md-6">
+                    <h2 class="color2">INVESTMENT ANALYSIS CHALLENGE <br> with <img
+                            src="assets/img//logo panen saham.webp" width="35%">
+                    </h2>
+                    <div class="my-5"></div>
+                    <h5 class="desc lh-base">
+                        Put your investment knowledge to the test, as you learn and analyze what goes into buying a
+                        company.
+                        You will be given a task to create and present an investment analysis on a stock of your chosen
+                        company listed on the
+                        Indonesia Stock Exchange (IDX).
+                    </h5>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/img/aset investment.webp" width="100%">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="accordion" id="terms">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button term-title collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#term1">
+                                    What are the aspects to be studied?
+                                </button>
+                            </h2>
+                            <div id="term1" class="accordion-collapse collapse" data-bs-parent="#terms">
+                                <div class="accordion-body term-body">
+                                    <ul class="lh-base">
+                                        <li>Analyze, select and search for stocks and information about the company.
+                                        </li>
+                                        <li>Learn about trading plans, Technical and Fundamental Analysis, and the
+                                            reasons
+                                            why investors use them.</li>
+                                        <li>Determine stock valuations and identify risks associated with investing in a
+                                            stock.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-3 border">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button term-title collapsed collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#term2">
+                                    Terms & Conditions
+                                </button>
+                            </h2>
+                            <div id="term2" class="accordion-collapse collapse" data-bs-parent="#terms">
+                                <div class="accordion-body term-body">
+                                    <ul>
+                                        <li>
+                                            The competition consists of 2 stages. Elimination may occur depending on
+                                            submissions on each stage.
+                                        </li>
+                                        <li>
+                                            Coaching sessions will be held through webinars.
+                                        </li>
+                                        <li>Participants can contact the mentors from PanenSAHAM to get hands-on
+                                            coaching for the investment analysis.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row justify-content-center pt-3">
+                <div class="col-md-10">
+                    <div class="text-center">
+                        <h2 class="color2">PRIZES
+                        </h2>
+                        <h5 class="desc">
+                            All participants will get a certificate associating <br> your participation in the ThinkTank
+                            Battle 2021.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 justify-content-center align-items-center">
+                <div class="col-md-3">
+                    <img src="assets/img/prizes.webp" width="100%">
+                </div>
+                <div class="col-md-5">
+                    <div class="bg-primary mb-2 p-3 list-allin">
+                        Cash prize IDR 1,500,000
+                    </div>
+                    <div class="bg-primary mb-2 p-3 list-allin">
+                        Certificate associating your participation
+                    </div>
+                    <div class="bg-primary p-3 list-allin">
+                        Monika PanenSAHAM trading apps 6-months subscription
+                    </div>
+                    <div class="bg-info p-3" style="text-align: justify;">
+                        Monika PanenSAHAM is an application that makes it simpler for you to filter stocks, according to
+                        your stock investment
+                        and trading style. It provides graph information, screening and alerts in real time. By winning
+                        the ThinkTank Battle
+                        2021, you will get a free 6-months subscription worth IDR 1,100,000 to access Technical and
+                        Fundamental Analysis of
+                        stocks.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <img src="assets/img/list atas .webp" width="100%" style="margin-top: -10%;">
 
     <div id="timeline">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="color2">TIMELINE
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <!--first section-->
+                    <div class="row align-items-center how-it-works d-flex">
+                        <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+                            <div class="circle">1</div>
+                        </div>
+                        <div class="col-10 text-white" style="margin-left:-5%">
+                            <h5><i class="fas fa-calendar-alt me-2"></i> 5 November</h5>
+                            Registration open
+                        </div>
+                    </div>
 
+                    <!--path between 1-2-->
+                    <div class="row timeline">
+                        <div class="col-2">
+                            <div class="corner top-right"></div>
+                        </div>
+                        <div class="col-8">
+                            <hr />
+                        </div>
+                        <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                        </div>
+                    </div>
+                    <!--second section-->
+                    <div class="row align-items-center justify-content-end how-it-works d-flex">
+                        <div class="col-10 text-white text-end" style="margin-right:-5%">
+                            <h5>1 December <i class="fas fa-calendar-alt ms-2"></i></h5>
+                            Registration close
+                        </div>
+                        <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                            <div class="circle">2</div>
+                        </div>
+                    </div>
+                    <!--path between 2-3-->
+                    <div class="row timeline">
+                        <div class="col-2">
+                            <div class="corner right-bottom"></div>
+                        </div>
+                        <div class="col-8">
+                            <hr />
+                        </div>
+                        <div class="col-2">
+                            <div class="corner top-left"></div>
+                        </div>
+                    </div>
+                    <!--third section-->
+
+                    <div class="row align-items-center how-it-works d-flex">
+                        <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+                            <div class="circle">3</div>
+                        </div>
+                        <div class="col-10 text-white" style="margin-left:-5%">
+                            <h5><i class="fas fa-calendar-alt me-2"></i> 3 December</h5>
+                            Opening day
+                        </div>
+                    </div>
+                    <div class="row timeline">
+                        <div class="col-2">
+                            <div class="corner top-right"></div>
+                        </div>
+                        <div class="col-8">
+                            <hr />
+                        </div>
+                        <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                        </div>
+                    </div>
+                    <!--second section-->
+                    <div class="row align-items-center justify-content-end how-it-works d-flex">
+                        <div class="col-10 text-white text-end" style="margin-right:-5%">
+                            <h5>6 December - 13 December <i class="fas fa-calendar-alt ms-2"></i></h5>
+                            Competition & coaching period
+                        </div>
+                        <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                            <div class="circle">4</div>
+                        </div>
+                    </div>
+                    <div class="row timeline">
+                        <div class="col-2">
+                            <div class="corner right-bottom"></div>
+                        </div>
+                        <div class="col-8">
+                            <hr />
+                        </div>
+                        <div class="col-2">
+                            <div class="corner top-left"></div>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center how-it-works d-flex">
+                        <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+                            <div class="circle">5</div>
+                        </div>
+                        <div class="col-10 text-white" style="margin-left:-5%">
+                            <h5><i class="fas fa-calendar-alt me-2"></i> 17 December</h5>
+                            Final submission
+                        </div>
+                    </div>
+                    <div class="row timeline">
+                        <div class="col-2">
+                            <div class="corner top-right"></div>
+                        </div>
+                        <div class="col-8">
+                            <hr />
+                        </div>
+                        <div class="col-2">
+                            <div class="corner left-bottom"></div>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center justify-content-end how-it-works d-flex">
+                        <div class="col-10 text-white text-end" style="margin-right:-5%">
+                            <h5>18 December <i class="fas fa-calendar-alt ms-2"></i></h5>
+                            Presentation day
+                        </div>
+                        <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                            <div class="circle">6</div>
+                        </div>
+                    </div>
+                    <div class="row timeline">
+                        <div class="col-2">
+                            <div class="corner right-bottom"></div>
+                        </div>
+                        <div class="col-8">
+                            <hr />
+                        </div>
+                        <div class="col-2">
+                            <div class="corner top-left"></div>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center how-it-works d-flex">
+                        <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+                            <div class="circle">7</div>
+                        </div>
+                        <div class="col-10 text-white" style="margin-left:-5%">
+                            <h5><i class="fas fa-calendar-alt me-2"></i> 19 December</h5>
+                            Winner announcement
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
     </div>
+    <img src="assets/img/List bawah .webp" width="100%" style="margin-top: -8%; position: relative; z-index: -1;">
 
-    <div id="about">
+    <div id="faq">
+        <div class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <h2 class="color2">FAQ
+                    </h2>
+                </div>
+                <div class="col-md-8 pt-4">
+                    <div class="accordion" id="terms">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button term-title collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    How do I apply?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#terms">
+                                <div class="accordion-body term-body">
+                                    <p>
+                                        You can apply individually or in a group of 2. Go to the ALL-in Competition
+                                        website’s homepage where you can click the
+                                        “Register as participants”. You will be redirected to a Google Form where you
+                                        can fill out the data required and the
+                                        category you want to compete in.
+                                        Before signing up, be sure to read every detail on the competition.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-2 border">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button term-title collapsed collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How much does it cost to register?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#terms">
+                                <div class="accordion-body term-body">
+                                    <p>
+                                        The cost for individual and group entry are different:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Individual: IDR 150,000
+                                        </li>
+                                        <li>
+                                            Group of 2: IDR 200,000
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        After you register, we will shortly send you a confirmation email where the
+                                        payment
+                                        details are stated.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-2 border">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button term-title collapsed collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What are the rules and who can apply?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#terms">
+                                <div class="accordion-body term-body">
+                                    <p>
+                                        The program is eligible for students from grade 9 to 12. As for rules, we have
+                                        set requirements that include:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            Participants can join individually or in a group of maximum 2 persons.
+                                        </li>
+                                        <li>
+                                            Group entry can form a team from different schools.
+                                        </li>
+                                        <li>
+                                            Participants are required to join a WhatsApp group where all updates and
+                                            information throughout the competition will be
+                                            announced.
+                                        </li>
+                                        <li>
+                                            There will be 2 stages during the competition. If the submission scores on
+                                            the
+                                            first stage are below the minimum
+                                            standard, elimination may occur.
+                                        </li>
+                                        <li>
+                                            Participants who are eliminated during the first stage are not eligible to
+                                            move
+                                            forward to the second stage. However,
+                                            eliminated participants are allowed to join webinar sessions by the mentors
+                                            from
+                                            PanenSAHAM.
+                                        </li>
+                                        <li>
+                                            Any act of foul play is intolerable and participants will be sanctioned if
+                                            there’s any proof of cheating.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-2 border">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button term-title collapsed collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    How is the competition held?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#terms">
+                                <div class="accordion-body term-body">
+                                    <p>
+                                        The competition is held virtually, from the process registration, document
+                                        submission, to the judging process.
+                                        <br> <br>
+                                        We use the Zoom app during opening, coaching session, until the presentation day
+                                        and winner announcement.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-2 border">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button term-title collapsed collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    What does ‘coached’ mean in this competition?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#terms">
+                                <div class="accordion-body term-body">
+                                    <p>
+                                        We collaborate with professionals from <b>PanenSAHAM</b> to assess your
+                                        submissions from the beginning until the presentation
+                                        day. You will also be guided and mentored by these professionals during the
+                                        completion of your investment analysis,
+                                        where you are also able to seek advice from them. Webinars are also held during
+                                        competition days to help improve your
+                                        analysis and submissions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-2 border">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button term-title collapsed collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    Can I apply without a group?
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#terms">
+                                <div class="accordion-body term-body">
+                                    <p>
+                                        Yes, you can apply individually with a different registration fee. The prize
+                                        will stay the same for individual or group
+                                        winner.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-2 border">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button term-title collapsed collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq7">
+                                    Can I form a team with my friends from different schools?
+                                </button>
+                            </h2>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#terms">
+                                <div class="accordion-body term-body">
+                                    <p>
+                                        Yes, you can.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-2 border">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button term-title collapsed collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq8">
+                                    What can I benefit from this experience?
+                                </button>
+                            </h2>
+                            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#terms">
+                                <div class="accordion-body term-body">
+                                    <p>
+                                        Now that the investment field is booming and gaining more awareness, you can
+                                        have new knowledge and also deepen your
+                                        insights around investments, especially stocks. You will also get your work
+                                        reviewed by professionals so you can note
+                                        the room of improvement of your project.
+                                        Your experience here is also significant for your CV and resume building, and it
+                                        also strengthens your credibility and
+                                        brand for later when you are pursuing education in the field you’re passionate
+                                        about.
 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 justify-content-center">
+                <div class="col-md-7 mt-5 mb-4 text-center">
+                    <h2 class="color2">ABOUT US
+                    </h2>
+                    <h5 class="desc">
+                        We are an independent university consultant based in Jakarta, Indonesia.
+                        Our mission is to ensure that students are thriving into the path they aspire to have in the
+                        future.<br>
+                    </h5>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col text-center">
+                            <img src="assets/img/Icon_1.png" class="mr-auto ml-auto"><br>
+                            <span>100% Students placed<br>at target universities</span>
+                        </div>
+                        <div class="col text-center">
+                            <img src="assets/img/Icon_2.png" class="mr-auto ml-auto"><br>
+                            <span>More than 40<br>School Clients</span>
+                        </div>
+                        <div class="col text-center">
+                            <img src="assets/img/Icon_3.png" class="mr-auto ml-auto"><br>
+                            <span>More than 1,000<br>Esays Reviewed</span>
+                        </div>
+                    </div>
+                    <div class="row mt-md-4">
+                        <div class="col text-center">
+                            <img src="assets/img/Icon_4.png" class="mr-auto ml-auto"><br>
+                            <span>More than 50<br>Corporate Partners</span>
+                        </div>
+                        <div class="col text-center">
+                            <img src="assets/img/Icon_5.png" class="mr-auto ml-auto"><br>
+                            <span>150+ Point SAT<br>Score Improvement</span>
+                        </div>
+                        <div class="col text-center">
+                            <img src="assets/img/Icon_6.png" class="mr-auto ml-auto"><br>
+                            <span>More than 1,500<br>Event Participants</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
+    <img src="assets/img/list atas .webp" width="100%" style="margin-top: 0%; position: relative; z-index: -1;">
+
+    <footer style="margin-top:-3%">
+        <div class="container pb-4">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="assets/img/logo.png" width="125px" alt="">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <i class="fas fa-globe fa-fw"></i> <a href="https://all-inedu.com"
+                        target="_blank">www.all-inedu.com</a>
+                    <br>
+                    <i class="fab fa-instagram fa-fw"></i> <a href="https://www.instagram.com/allineduspace/"
+                        target="_blank">@allineduspace</a>
+                </div>
+                <div class="col-md-5 mb-3 ps-md-5">
+                    <i class="fas fa-mobile-alt fa-fw"></i> <a href="https://wa.me/6281808081363" target="_blank">+62
+                        818-0808-1363</a> /
+                    <a href="https://wa.me/6287860811413" target="_blank">+62 878-6081-1413</a> <br>
+                    <i class="fas fa-envelope fa-fw"></i> <a href="mailto:info@all-inedu.com"
+                        target="_blank">info@all-inedu.com</a>
+                </div>
+                <div class="col-md-12">
+                    <hr class="my-2">
+                </div>
+                <div class="col-md-4 mb-3">
+                    Jl Jeruk Kembar Blok Q9, No. 15 <br> Srengseng, Kembangan <br>
+                    Jakarta Barat 11630, Indonesia
+                </div>
+                <div class="col-md-3 mb-3">
+                    #itsALLintheprep <br>
+                    #TakeOnYourFuture
+                </div>
+                <div class="col-md-5 mb-3 ps-md-5">
+                    Copyright © 2021 · ALL-in Eduspace. <br>
+                    All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
@@ -199,6 +923,13 @@
                 $('#regBtn').addClass('d-md-none')
             }
         })
+
+        $('.how-it-works').each(function () {
+            $(this).hover(function (e) {
+                $(this).find('.circle').toggleClass('circle-hover')
+            })
+        })
+
     </script>
 </body>
 
