@@ -110,7 +110,7 @@
             position: absolute;
             z-index: 999;
             width: 7%;
-            right: 44%;
+            right: 30%;
             bottom: 25%;
         }
 
@@ -148,6 +148,7 @@
         }
 
         #prizes {
+            scroll-margin-top: -42em !important;
             margin-top: -10%;
             padding-top: 10%;
             padding-bottom: 10%;
@@ -184,9 +185,13 @@
         }
 
         #timeline {
+            position: relative;
+            scroll-margin-top: 10em !important;
             min-height: 100vh;
             background: #263774;
             margin-top: -5%;
+            /* padding-bottom: 10%; */
+            z-index: 5;
         }
 
         #faq {
@@ -350,7 +355,8 @@
                 </div>
 
                 <div class="d-md-flex btn-reg">
-                    <a href="#" class="btn btn-warning d-md-none" id="regBtn">Register</a>
+                    <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
+                        class="btn btn-warning d-md-none" id="regBtn">Register</a>
                 </div>
             </div>
         </div>
@@ -373,7 +379,8 @@
                         </b>
                     </h5>
                     <img src="assets/img/ELigibility.webp" class="eligibility">
-                    <a href="#" class="btn btn-primary">Register Now</a>
+                    <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
+                        class="btn btn-primary">Register Now</a>
                     <div class="mt-4">
                         <img src="assets/img/logo all-in .webp" width="20%" class="pe-3">
                         <img src="assets/img/logo panen saham.webp" width="30%">
@@ -407,7 +414,8 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-3 d-flex align-items-stretch">
-                    <a href="#">
+                    <a href="https://www.youtube.com/watch?v=AW8piZFYsVo&ab_channel=KomunitasPanenSaham"
+                        target="_blank">
                         <div class="card" style="width: 100%;">
                             <div class="card-body text-center m-5">
                                 <img src="assets/img/Panen saham youtube.webp" width="100%">
@@ -512,21 +520,24 @@
                         <h2 class="color2">PRIZES
                         </h2>
                         <h5 class="desc">
-                            All participants will get a certificate associating <br> your participation in the ThinkTank
+                            All participants will get a certificate associating your participation in the <br> ThinkTank
                             Battle 2021.
                         </h5>
                     </div>
                 </div>
             </div>
             <div class="row mt-3 justify-content-center align-items-center">
-                <div class="col-md-3">
+                <div class="col-md-3 mb-3">
                     <img src="assets/img/prizes.webp" width="100%">
                 </div>
                 <div class="col-md-5">
-                    <div class="bg-primary mb-2 p-3 list-allin">
+                    <div class="desc " style="color:#EA9D38;">
+                        <b>1 Winner will get:</b>
+                    </div>
+                    <div class="bg-primary mb-1 p-3 list-allin">
                         Cash prize IDR 1,500,000
                     </div>
-                    <div class="bg-primary mb-2 p-3 list-allin">
+                    <div class="bg-primary mb-1 p-3 list-allin">
                         Certificate associating your participation
                     </div>
                     <div class="bg-primary p-3 list-allin">
@@ -629,7 +640,7 @@
                     <!--second section-->
                     <div class="row align-items-center justify-content-end how-it-works d-flex">
                         <div class="col-10 text-white text-end" style="margin-right:-5%">
-                            <h5>6 December - 13 December <i class="fas fa-calendar-alt ms-2"></i></h5>
+                            <h5>6 December - 16 December <i class="fas fa-calendar-alt ms-2"></i></h5>
                             Competition & coaching period
                         </div>
                         <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
@@ -715,7 +726,7 @@
                     </h2>
                 </div>
                 <div class="col-md-8 pt-4">
-                    <div class="accordion" id="terms">
+                    <div class="accordion" id="faqs">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button term-title collapsed" type="button"
@@ -723,15 +734,14 @@
                                     How do I apply?
                                 </button>
                             </h2>
-                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#terms">
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqs">
                                 <div class="accordion-body term-body">
                                     <p>
                                         You can apply individually or in a group of 2. Go to the ALL-in Competition
                                         website’s homepage where you can click the
                                         “Register as participants”. You will be redirected to a Google Form where you
-                                        can fill out the data required and the
-                                        category you want to compete in.
-                                        Before signing up, be sure to read every detail on the competition.
+                                        can fill out the data required. <br>
+                                        Before signing up, be sure to <b>read every detail </b> on the competition.
                                     </p>
                                 </div>
                             </div>
@@ -743,19 +753,21 @@
                                     How much does it cost to register?
                                 </button>
                             </h2>
-                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#terms">
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqs">
                                 <div class="accordion-body term-body">
                                     <p>
                                         The cost for individual and group entry are different:
                                     </p>
-                                    <ul>
-                                        <li>
-                                            Individual: IDR 150,000
-                                        </li>
-                                        <li>
-                                            Group of 2: IDR 200,000
-                                        </li>
-                                    </ul>
+                                    <b>
+                                        <ul>
+                                            <li>
+                                                Individual: IDR 150,000
+                                            </li>
+                                            <li>
+                                                Group of 2: IDR 200,000
+                                            </li>
+                                        </ul>
+                                    </b>
                                     <p>
                                         After you register, we will shortly send you a confirmation email where the
                                         payment
@@ -771,7 +783,7 @@
                                     What are the rules and who can apply?
                                 </button>
                             </h2>
-                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#terms">
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqs">
                                 <div class="accordion-body term-body">
                                     <p>
                                         The program is eligible for students from grade 9 to 12. As for rules, we have
@@ -818,13 +830,14 @@
                                     How is the competition held?
                                 </button>
                             </h2>
-                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#terms">
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqs">
                                 <div class="accordion-body term-body">
                                     <p>
                                         The competition is held virtually, from the process registration, document
                                         submission, to the judging process.
                                         <br> <br>
-                                        We use the Zoom app during opening, coaching session, until the presentation day
+                                        We use the <b>Zoom app</b> during opening, coaching session, until the
+                                        presentation day
                                         and winner announcement.
                                     </p>
                                 </div>
@@ -837,7 +850,7 @@
                                     What does ‘coached’ mean in this competition?
                                 </button>
                             </h2>
-                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#terms">
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqs">
                                 <div class="accordion-body term-body">
                                     <p>
                                         We collaborate with professionals from <b>PanenSAHAM</b> to assess your
@@ -858,7 +871,7 @@
                                     Can I apply without a group?
                                 </button>
                             </h2>
-                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#terms">
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqs">
                                 <div class="accordion-body term-body">
                                     <p>
                                         Yes, you can apply individually with a different registration fee. The prize
@@ -875,7 +888,7 @@
                                     Can I form a team with my friends from different schools?
                                 </button>
                             </h2>
-                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#terms">
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqs">
                                 <div class="accordion-body term-body">
                                     <p>
                                         Yes, you can.
@@ -890,7 +903,7 @@
                                     What can I benefit from this experience?
                                 </button>
                             </h2>
-                            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#terms">
+                            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqs">
                                 <div class="accordion-body term-body">
                                     <p>
                                         Now that the investment field is booming and gaining more awareness, you can
