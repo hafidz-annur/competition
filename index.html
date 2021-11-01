@@ -229,6 +229,8 @@
             width: 12%;
         }
 
+
+
         @media only screen and (max-width: 600px) {
             .navbar-brand {
                 width: 35%;
@@ -281,9 +283,12 @@
             }
 
             .eligibility {
-                top: 40% !important;
-                right: 30% !important;
-                width: 16% !important;
+                position: relative !important;
+                /* display: flex; */
+                float: right;
+                top: 0 !important;
+                right: 20% !important;
+                width: 17% !important;
             }
 
             #coach {
@@ -696,9 +701,9 @@
             </div>
         </div>
     </div>
-    <img src="assets/img/List bawah .webp" width="100%" style="margin-top: -8%; position: relative; z-index: -1;">
+    <img src="assets/img/List bawah .webp" width="100%" style="margin-top: -8%; position: relative; z-index: 3;">
 
-    <div id="faq">
+    <div id="faq" style="position: relative; z-index: 1;">
         <div class="container mb-5">
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center">
