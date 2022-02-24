@@ -1,3 +1,11 @@
+.term-title-blue{
+    font-size: 20px !important;
+    background: #263774 !important;
+    font-weight: 600;
+    color: #FFF;
+    
+}
+
 .term-color{
     background-color: #FCCD86 !important;
     color: #263774 !important;
