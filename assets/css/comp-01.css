@@ -1,3 +1,34 @@
+.mister-krip{
+    border-radius: 4vh;
+    background-color: #ea9d38;
+    color: #fff;
+    font-size: 14px;
+    padding: 2vh;
+    font-weight: 500;
+}
+
+.mister-krip-dua{
+    border-top-right-radius: 4vh;
+    border-bottom-right-radius: 4vh;
+    background-color: #ea9d38;
+    color: #fff;
+    font-size: 14px;
+    padding: 2vh;
+    font-weight: 500;
+}
+
+.judges{
+    border-radius: 10% !important;
+    font-size: 15px;
+    background-color: #FDDBB5;
+    color: #263774;
+    font-weight: 600;
+}
+
+.krip{
+    padding-left: 5%;
+}
+
 .testimoni-person{
     font-weight: 700 !important;
     color: #243972 !important;
