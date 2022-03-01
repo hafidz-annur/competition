@@ -465,16 +465,6 @@
     <div class="wa">
         <img src="assets/img/wa.png" alt="Whatsapp">
     </div>
-    <div class="wa-list d-none">
-        <a href="https://api.whatsapp.com/send?phone=6281808081363&text=Hello%20*ALL-in%20Eduspace*!%0AMy%20name%20is%0A%0A_I%20would%20like%20to%20get%20more%20information%20about%20Cyrptocurrency%20Competition._"
-            target="_blank" class="wa-item">
-            Phone Number 1
-        </a>
-        <a href="https://api.whatsapp.com/send?phone=6287860811413&text=Hello%20*ALL-in%20Eduspace*!%0AMy%20name%20is%0A%0A_I%20would%20like%20to%20get%20more%20information%20about%20Cyrptocurrency%20Competition._"
-            target="_blank" class="wa-item">
-            Phone Number 2
-        </a>
-    </div>
 
     <nav id="nav" class="navbar fixed-top bg-navbar1 navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -1243,15 +1233,7 @@
         $('#logoColor').hide();
 
         $('.wa').click(function () {
-            if ($('.wa-list').hasClass('d-none')) {
-                $('.wa-list').removeClass('d-none');
-                $('.wa-list').show('fade');
-                $('.wa-list').addClass('d-block');
-            } else {
-                $('.wa-list').hide('fade');
-                $('.wa-list').removeClass('d-block');
-                $('.wa-list').addClass('d-none');
-            }
+            window.open('https://api.whatsapp.com/send?phone=6287798385403&text=Hello%20*ALL-in%20Eduspace*!%0AMy%20name%20is%0A%0A_I%20would%20like%20to%20get%20more%20information%20about%20Cyrptocurrency%20Competition._', '_blank');
         })
 
         $(window).scroll(function () {
