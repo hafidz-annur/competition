@@ -1,0 +1,41 @@
+.wa {
+    position: fixed;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    right: 20px;
+    bottom: 20px;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+.wa img {
+    width: 100%;
+}
+
+.wa-list {
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    z-index: 99999;
+    
+}
+
+.wa-item {
+    display: block;
+    width: 150px;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 3px 15px;
+    margin:5px 0px;
+    border: 2px solid #E98621;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.wa-item:hover {
+    background: #EA9D38;
+    color: #000;
+}

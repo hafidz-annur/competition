@@ -11,6 +11,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/timeline.css">
     <link rel="stylesheet" href="assets/css/comp-01.css">
+    <link rel="stylesheet" href="assets/css/wa.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -460,6 +461,20 @@
             </div>
         </div>
     </div> -->
+
+    <div class="wa">
+        <img src="assets/img/wa.png" alt="Whatsapp">
+    </div>
+    <div class="wa-list d-none">
+        <a href="https://api.whatsapp.com/send?phone=6281808081363&text=Hello%20*ALL-in%20Eduspace*!%0AMy%20name%20is%0A%0A_I%20would%20like%20to%20get%20more%20information%20about%20Cyrptocurrency%20Competition._"
+            target="_blank" class="wa-item">
+            Phone Number 1
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=6287860811413&text=Hello%20*ALL-in%20Eduspace*!%0AMy%20name%20is%0A%0A_I%20would%20like%20to%20get%20more%20information%20about%20Cyrptocurrency%20Competition._"
+            target="_blank" class="wa-item">
+            Phone Number 2
+        </a>
+    </div>
 
     <nav id="nav" class="navbar fixed-top bg-navbar1 navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -1226,6 +1241,18 @@
         // $('#register').find('.stiky-allin').hide()
         $('.nav-item a').css('color', 'white')
         $('#logoColor').hide();
+
+        $('.wa').click(function () {
+            if ($('.wa-list').hasClass('d-none')) {
+                $('.wa-list').removeClass('d-none');
+                $('.wa-list').show('fade');
+                $('.wa-list').addClass('d-block');
+            } else {
+                $('.wa-list').hide('fade');
+                $('.wa-list').removeClass('d-block');
+                $('.wa-list').addClass('d-none');
+            }
+        })
 
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
