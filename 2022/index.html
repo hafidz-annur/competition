@@ -57,6 +57,7 @@
         .nav-link {
             padding: 10px 20px !important;
             font-weight: 600 !important;
+            
         }
 
         .nav-link.active {
@@ -190,7 +191,7 @@
         }
 
         .term-body {
-            font-size: 18px !important;
+            font-size: 18px ;
         }
 
         /* .accordion-item:first-of-type .term-title {
@@ -286,6 +287,10 @@
         }
 
         @media only screen and (max-width: 600px) {
+            #competition {
+                margin-top: -25%;
+            }
+
             .navbar-brand {
                 width: 35%;
             }
@@ -464,21 +469,21 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" id="regFake"
-                            href="https://bit.ly/allincompetition2021-registration">Register</a>
+                            href="https://bit.ly/CryptoCompetition-Registration">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="regFake1" href="https://bit.ly/allincompetition2021-registration">Submit
+                        <a class="nav-link" id="regFake1" href="https://bit.ly/CryptoCompetition-Submission">Submit
                             Analysis</a>
                     </li>
                 </ul>
 
                 <div class="d-md-flex btn-reg">
-                    <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
+                    <a href="https://bit.ly/CryptoCompetition-Registration" target="_blank"
                         class="btn btn-warning d-md-none" id="regBtn">Register
                     </a>
                 </div>
                 <div class="d-md-flex btn-reg">
-                    <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
+                    <a href="https://bit.ly/CryptoCompetition-Submission" target="_blank"
                         class="btn btn-warning d-md-none" id="subBtn">Submit Analysis
                     </a>
                 </div>
@@ -510,7 +515,7 @@
                             Registration & Submission: <b style="color: #FCAE42;">7 - 25 March 2022</b>
                         </p>
                     </h5>
-                    <a href="#timeline" target="_blank"
+                    <a href="#timeline"
                         class="btn btn-warning mb-3">See our Timeline
                     </a>
                     <h5 class="desc-home mb-2">
@@ -643,8 +648,8 @@
                                         style="font-weight: 600 !important; color: #243972 !important;" target="_blank"
                                         class="btn btn-light mb-4">Submit Your Analysis
                                     </a>
-                                    <h2 style="font-weight: 700; color: #fff;">JUDGED BY THE EXPERTS
-                                        From PanenSAHAM
+                                    <h2 style="font-weight: 700; color: #fff;">
+                                        JUDGED BY CRYPTO LECTURERS
                                     </h2>
                                 </div>
                             </div>
@@ -704,8 +709,8 @@
                         <h2 style="color: #263774;">PRIZES
                         </h2>
                         <h5 style="font-weight: 700;" class="color2">
-                            All participants will get a certificate associating your participation in the <br> ThinkTank
-                            Battle 2021.
+                            All participants will get a certificate associating your participation in the <br> Cryptocurrency
+                            Analysis Competition
                         </h5>
                     </div>
                 </div>
@@ -808,7 +813,7 @@
                             <div class="circle">3</div>
                         </div>
                         <div class="col-10 text-white" style="margin-left:-5%">
-                            <h5><i class="fas fa-calendar-alt me-2"></i> 25 March (11:59 PM WIB)</h5>
+                            <h5><i class="fas fa-calendar-alt me-2"></i> 25 March (08:00 PM WIB)</h5>
                             <h5 class="timeline-desc">Submission Close</h5>
                         </div>
                     </div>
@@ -970,21 +975,17 @@
                                     <p>
                                         The cost for this competition is <b> IDR 100,000 </b> per individual.
                                     </p>
-                                    <!-- <b>
-                                        <ul>
-                                            <li>
-                                                Individual: IDR 150,000
-                                            </li>
-                                            <li>
-                                                Group of 2: IDR 200,000
-                                            </li>
-                                        </ul>
-                                    </b> -->
                                     <p>
-                                        After you register, we will shortly contact you through WhatsApp for a
-                                        confirmation
-                                        and send you an email where the payment details are stated. Fees are
-                                        non-refundable.
+                                        The bank account number and details are attached in the registration form. 
+                                    </p>
+                                    <p>
+                                        
+                                        
+                                        You can register by filling out your details and attach the payment receipt 
+                                        in the registration form. After registration and payment confirmation is complete, 
+                                        confirmation email will be sent and we will shortly contact you through WhatsApp for 
+                                        further steps. Fees are non-refundable.
+
                                     </p>
                                 </div>
                             </div>
@@ -1078,7 +1079,8 @@
                                         you can have new knowledge and also deepen your insights around it.
                                         You will also get your work reviewed by professionals so you can note
                                         the room of improvement of your knowledge & analysis skills.
-                                        <br>
+                                    </p>
+                                    <p>
                                         Your experience here is also significant for your CV and resume building,
                                         and it also strengthens your credibility and brand for later when you are
                                         pursuing education in the field you're passionate about.
@@ -1121,7 +1123,7 @@
 
                     </div>
                     <div class="col-md-10 text-center">
-                        <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
+                        <a href="https://bit.ly/CryptoCompetition-Registration" target="_blank"
                             class="btn btn-warning">
                             Register as Participants
                         </a>
@@ -1228,21 +1230,21 @@
                 $('#mtimeline').removeClass('active')
                 $('#mfaq').removeClass('active')
                 $('#testimonial').removeClass('active')
-            } else if (scroll >= 2300 & scroll <= 3000) {
+            } else if (scroll >= 2300 & scroll <= 3500) {
                 $('#mhome').removeClass('active')
                 $('#mcompetition').removeClass('active')
                 $('#mprizes').addClass('active')
                 $('#mtimeline').removeClass('active')
                 $('#mfaq').removeClass('active')
                 $('#testimonial').removeClass('active')
-            } else if (scroll >= 3700 & scroll <= 4700) {
+            } else if (scroll >= 3600 & scroll <= 4500) {
                 $('#mhome').removeClass('active')
                 $('#mcompetition').removeClass('active')
                 $('#mprizes').removeClass('active')
                 $('#mtimeline').addClass('active')
                 $('#mfaq').removeClass('active')
                 $('#testimonial').removeClass('active')
-            } else if (scroll >= 4700 & scroll <= 5100) {
+            } else if (scroll >= 4500 & scroll <= 5100) {
                 $('#mhome').removeClass('active')
                 $('#mcompetition').removeClass('active')
                 $('#mprizes').removeClass('active')
