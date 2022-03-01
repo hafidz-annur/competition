@@ -439,6 +439,10 @@
             right: 5%;
             transform: rotate(45deg);
         }
+
+        .comp-check {
+            list-style-image: url('assets/img/checklist.webp');
+        }
     </style>
 </head>
 
@@ -459,7 +463,10 @@
 
     <nav id="nav" class="navbar fixed-top bg-navbar1 navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <img src="assets/img/crypto/ALL-in Eduspace Logo.png" class="navbar-brand pe-5">
+
+            <img src="assets/img/crypto/ALL-in Eduspace Logo (white).png" class="navbar-brand pe-5" id="logoWhite">
+            <img src="assets/img/crypto/ALL-in Eduspace Logo.png" class="navbar-brand pe-5" id="logoColor">
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -633,7 +640,7 @@
                                         <li>
                                             <b>Our team will contact you</b> shortly after to ensure you as a
                                             participant are entitled to:
-                                            <ul>
+                                            <ul class="comp-check">
                                                 <li>Receive a <b>general learning guide about cryptocurrency</b> and
                                                     some tips on searching information on cryptocurrency from
                                                     PanenSAHAM.</li>
@@ -664,7 +671,7 @@
                                         Submit the cryptocurrency analysis deck
                                     </h3>
                                     <h3 style="font-weight: 600; color: #FCCD86;">
-                                        no later than March 25th, 2022 (11.59 PM).
+                                        no later than March 25th, 2022 (08.00 PM).
                                     </h3>
                                     <a href="https://bit.ly/CryptoCompetition-Submission"
                                         style="font-weight: 600 !important; color: #243972 !important;" target="_blank"
@@ -723,6 +730,7 @@
             </div>
         </div>
     </div>
+
     <img src="assets/img/crypto/Lengkung atas (kuning).webp" width="100%"
         style="margin-top: -12%; position: relative; z-index: 3;">
     <div id="prizes">
@@ -1123,13 +1131,13 @@
                     <div class="col-md-10 mt-8 text-center">
                         <h2 style="font-weight: 700; color: #fff;">TESTIMONIALS
                         </h2>
-                        <h3 class="mb-4" style="font-weight: 700 !important; color: #243972 !important;">
+                        <h3 class="mb-5" style="font-weight: 700 !important; color: #243972 !important;">
                             From “ALL-in Investment Analysis Challenge with PanenSAHAM”<br>
                         </h3>
                         <h5 class="testimoni-text">Thank you very much for this new experience,
                             my knowledge of investing truly increased after this challenge.
                         </h5>
-                        <h5 class="testimoni-person mb-4">
+                        <h5 class="testimoni-person mb-5">
                             - William Susanto
                         </h5>
                         <h5 class="testimoni-text">
@@ -1137,14 +1145,14 @@
                             the competition. Everything was well informed and easily understood.
                             I did not have to face much difficulties when joining this competition.<br>
                         </h5>
-                        <h5 class="testimoni-person mb-4">
+                        <h5 class="testimoni-person mb-5">
                             - Samuel Christian Hosea
                         </h5>
                         <h5 class="testimoni-text">
                             I had a great time attending this competition. It was really enjoyable to learn
                             from the mentors and I believe what I've learned will be very useful to me.<br>
                         </h5>
-                        <h5 class="testimoni-person mb-4">
+                        <h5 class="testimoni-person mb-5">
                             - Odelyn Xie
                         </h5>
 
@@ -1217,6 +1225,7 @@
     <script>
         // $('#register').find('.stiky-allin').hide()
         $('.nav-item a').css('color', 'white')
+        $('#logoColor').hide();
 
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
@@ -1231,6 +1240,8 @@
                 $('#regFake').hide();
                 $('#regFake1').hide();
                 $('.nav-item a').css('color', 'black')
+                $('#logoWhite').hide();
+                $('#logoColor').show();
             } else {
                 $('#register').find('.stiky-allin').fadeOut('fast')
                 $('#nav').removeClass('bg-navbar2 shadow')
@@ -1240,6 +1251,8 @@
                 $('#regFake').show();
                 $('#regFake1').show()
                 $('.nav-item a').css('color', 'white')
+                $('#logoWhite').show();
+                $('#logoColor').hide();
             }
 
             if (scroll >= 0 & scroll <= 750) {
