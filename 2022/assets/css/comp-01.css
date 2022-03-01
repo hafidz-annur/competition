@@ -12,17 +12,19 @@
     border-bottom-right-radius: 4vh;
     background-color: #ea9d38;
     color: #fff;
-    font-size: 14px;
+    font-size: 1.1em;
     padding: 2vh;
     font-weight: 500;
 }
 
 .judges{
-    border-radius: 10% !important;
+    border-radius: 20px !important;
     font-size: 15px;
     background-color: #FDDBB5;
     color: #263774;
     font-weight: 600;
+    margin-top: -5px;
+    height: 100px;
 }
 
 .krip{
