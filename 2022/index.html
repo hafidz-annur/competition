@@ -314,8 +314,8 @@
 
             .nav-link.active {
                 border-radius: 0 !important;
-                background: #FCAE42 !important;
-                color: #fff !important;
+                background: #fff !important;
+                color: #000 !important;
             }
 
             #home {
@@ -447,6 +447,13 @@
         .comp-check {
             list-style-image: url('assets/img/checklist.webp');
         }
+
+        .navbar-light .navbar-toggler {
+            color: rgba(0, 0, 0, .55);
+            border-color: none;
+            box-shadow: none;
+            background: white;
+        }
     </style>
 </head>
 
@@ -470,7 +477,7 @@
     </div>
 
     <nav id="nav" class="navbar fixed-top bg-navbar1 navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+        <div class="container py-md-0 py-2">
 
             <img src="assets/img/crypto/ALL-in Eduspace Logo (white).png" class="navbar-brand pe-5" id="logoWhite">
             <img src="assets/img/crypto/ALL-in Eduspace Logo.png" class="navbar-brand pe-5" id="logoColor">
@@ -1266,6 +1273,8 @@
                 $('#logoWhite').show();
                 $('#logoColor').hide();
             }
+
+            console.log(scroll)
 
             if (scroll >= 0 & scroll <= 750) {
                 $('#mhome').addClass('active')
