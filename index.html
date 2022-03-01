@@ -356,7 +356,7 @@
             }
 
             .btn-reg {
-                background: #263774;
+                background: #ea9d38;
                 margin-bottom: 20px !important;
             }
 
@@ -458,7 +458,7 @@
                 </div>
                 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <li class="nav-item mr-2">
                         <a class="nav-link" id="regFake" href="https://bit.ly/allincompetition2021-registration">Register</a>
                     </li>
                     <li class="nav-item">
@@ -466,12 +466,12 @@
                     </li>
                 </ul>
                 
-                <div class="d-md-flex btn-reg">
+                <div class="d-md-flex btn-reg mr-2">
                     <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
                         class="btn btn-warning d-md-none" id="regBtn">Register
                     </a>
                 </div>
-                <div class="d-md-flex btn-reg ms-2">
+                <div class="d-md-flex btn-reg">
                     <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
                         class="btn btn-warning d-md-none" id="subBtn">Submit Analysis
                     </a>
@@ -505,12 +505,22 @@
                         </p>
                     </h5>
                     <img src="assets/img/crypto/Sticker.webp" class="eligibility">
-                    <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
-                        class="btn btn-warning">Register as Participants
-                    </a>
-                    <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
-                        class="btn btn-warning ms-2">See our Timeline
-                    </a>
+                    <div class="row col-md-10">
+                        <div class="col-md-5 mb-2">
+                            <a href="https://bit.ly/allincompetition2021-registration" target="_blank" class="btn btn-warning mr-2">
+                                Register as Participants
+                            </a>
+                        </div>
+
+                        <div class="col-md-5">
+                            <a href="https://bit.ly/allincompetition2021-registration" target="_blank" class="btn btn-warning">
+                                See our Timeline
+                            </a>
+                        </div>
+                        
+                    
+                    </div>
+                   
                     
                     <!-- <div class="mt-4">
                         <img src="assets/img/logo all-in .webp" width="20%" class="pe-3">
@@ -1216,7 +1226,7 @@
                 $('#subBtn').removeClass('d-md-none')
                 $('#regFake').hide();
                 $('#regFake1').hide();
-                $('.nav-item a').css('color', '#232629 !important');
+                $('.nav-item .nav-link').css('color', '#232629 !important');
             } else {
                 $('#register').find('.stiky-allin').fadeOut('fast')
                 $('#nav').removeClass('bg-navbar2 shadow')
@@ -1225,7 +1235,8 @@
                 $('#subBtn').addClass('d-md-none')
                 $('#regFake').show();
                 $('#regFake1').show()
-                $('.nav-item a').css('color', '#FFFFFF ');
+                // $('.nav-item a').css('color', '#FFFFFF');
+                $('.nav-item .nav-link').css('color', '#232629 !important');
                 // $('#regFake').removeClass('active')
                 // $('#regFake1').removeClass('active')
             }
