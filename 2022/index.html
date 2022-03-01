@@ -15,7 +15,7 @@
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>cryptocurrency Analysis Competition</title>
+    <title>Cryptocurrency Analysis Competition</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133747692-2"></script>
     <script>
@@ -124,7 +124,7 @@
             z-index: 999;
             width: 10%;
             right: 30%;
-            bottom: 30%;
+            bottom: 40%;
         }
 
         #competition {
@@ -136,6 +136,8 @@
         }
 
         #coach {
+            padding-top: 3%;
+            margin-bottom: 3%;
             height: 50vh;
             background: #FFFFFF;
         }
@@ -171,10 +173,11 @@
         #prizes {
 
             scroll-margin-top: 5em !important;
-            margin-top: 5%;
-            padding-top: 2%;
+            margin-top: -5%;
+            padding-top: 5%;
             padding-bottom: 10%;
             min-height: 100vh;
+            background-color: #FFE1B3;
             /* background: url('assets/img/crypto/middle\ background.webp');
             background-size: cover; */
         }
@@ -212,16 +215,26 @@
             min-height: 100vh;
             background: #263774;
             margin-top: -5%;
+            padding-bottom: 5%;
+            background-color: #FFE1B3;
             /* padding-bottom: 10%; */
+            z-index: 5;
+        }
+
+        #testimonials {
+            position: relative;
+            scroll-margin-top: 10em !important;
+            margin-top: 10%;
+            padding-bottom: 1%;
             z-index: 5;
         }
 
         #faq {
             position: relative;
             z-index: -2;
-            margin-top: -10%;
-            padding-top: 10%;
-            padding-bottom: 10%;
+            margin-top: -8%;
+            padding-top: 13%;
+            padding-bottom: 1%;
             min-height: 100vh;
             background: rgb(255, 255, 255);
             background: linear-gradient(74deg, rgba(120, 146, 186, 1) 0%, rgba(120, 146, 185, 1) 100%);
@@ -234,8 +247,19 @@
 
         .accordion-button {
             color: #fff !important;
-            background: #ea9d38 !important;
+            background: #ea9d38;
         }
+
+        .accordion-button-blue {
+            color: #fff !important;
+            background: #263774 !important;
+        }
+
+
+
+        /* .nav-item .nav-link {
+            color: #FFFFFF !important;
+        } */
 
         footer {
             padding: 3% 2% 1% 2%;
@@ -257,6 +281,10 @@
             width: 12%;
         }
 
+        .term-body {
+            border-radius: 0 0 20px 20px !important;
+        }
+
         @media only screen and (max-width: 600px) {
             .navbar-brand {
                 width: 35%;
@@ -271,10 +299,7 @@
                 display: block !important;
             }
 
-            .nav-item a {
-                color: #000 !important;
-                border-bottom: 2px solid #dedede;
-            }
+
 
             .nav-link.active {
                 border-radius: 0 !important;
@@ -327,6 +352,10 @@
             }
 
             .accordion-button {
+                font-size: 17px !important;
+            }
+
+            .accordion-button-blue {
                 font-size: 17px !important;
             }
 
@@ -387,7 +416,7 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0" id="register">
+    <!-- <div class="container-fluid p-0" id="register">
         <div class="stiky-allin d-md-none">
             <div class="row align-items-center">
                 <div class="col-7">
@@ -399,7 +428,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <nav id="nav" class="navbar fixed-top bg-navbar1 navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -431,16 +460,18 @@
                         </li>
                     </ul>
                 </div>
-                
+
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" id="regFake" href="https://bit.ly/allincompetition2021-registration">Register</a>
+                        <a class="nav-link" id="regFake"
+                            href="https://bit.ly/allincompetition2021-registration">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="regFake1" href="https://bit.ly/allincompetition2021-registration">Submit Analysis</a>
+                        <a class="nav-link" id="regFake1" href="https://bit.ly/allincompetition2021-registration">Submit
+                            Analysis</a>
                     </li>
                 </ul>
-                
+
                 <div class="d-md-flex btn-reg">
                     <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
                         class="btn btn-warning d-md-none" id="regBtn">Register
@@ -451,7 +482,7 @@
                         class="btn btn-warning d-md-none" id="subBtn">Submit Analysis
                     </a>
                 </div>
-                
+
             </div>
         </div>
     </nav>
@@ -465,28 +496,31 @@
                     <div class="mb-4">
                         <img src="assets/img/crypto/Logo box.webp" width="60%" style="margin-top: 0%;">
                     </div>
-                    
+
                     <h3 class="mb-md-2 sub-title-crypto">7 March - 9 April 2022</h3>
                     <h5 class="desc-crypto">For Grade 9 - 12</h5>
                     <hr width="20%" style="color: #FFFFFF !important; height: 2px;">
-                    <h5 class="mb-4 desc-home">
+                    <h5 class="mb-2 desc-home">
                         Create and present your cryptocurrency investment strategies to the judges
                         from PanenSAHAM and aim for <b style="color: #FCCD86;">
                             a total prize worth IDR 3 million!
                         </b>
                         <br>
-                        <p>
+                        <p class="my-0">
                             Registration & Submission: <b style="color: #FCAE42;">7 - 25 March 2022</b>
                         </p>
                     </h5>
-                    <img src="assets/img/crypto/Sticker.webp" class="eligibility">
+                    <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
+                        class="btn btn-warning mb-3">See our Timeline
+                    </a>
+                    <h5 class="desc-home mb-2">
+                        Register and Confirm Your Payment Here
+                    </h5>
                     <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
                         class="btn btn-warning">Register as Participants
                     </a>
-                    <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
-                        class="btn btn-warning">See our Timeline
-                    </a>
-                    
+                    <img src="assets/img/crypto/Sticker.webp" class="eligibility">
+
                     <!-- <div class="mt-4">
                         <img src="assets/img/logo all-in .webp" width="20%" class="pe-3">
                         <img src="assets/img/logo panen saham.webp" width="30%">
@@ -495,9 +529,9 @@
             </div>
         </div>
     </div>
-    <img src="assets/img/crypto/Lengkung atas (putih).webp" width="100%" style="margin-top:-4%; ">
-    <img src="assets/img/crypto/lengkung atas (orange).webp" height="100px" width="100%" style="margin-top:-11%; ">
-    
+    <img src="assets/img/crypto/Lengkung Atas Atas.webp" width="100%" style="margin-top:-6%; ">
+
+
     <div id="coach">
         <div class="container">
             <div class="row justify-content-center">
@@ -511,8 +545,8 @@
             </div>
         </div>
     </div>
-    <img src="assets/img/crypto/Lengkung bawah (putih).webp" width="100%" style="margin-top: -10%;">
-    <img src="assets/img/crypto/lengkung bawah (orange).webp" height="100px" width="100%" style="margin-top: -13%;">
+    <img src="assets/img/crypto/Lengkung Bawah Atas.webp" width="100%" style="margin-top: -15%;">
+
 
     <div id="competition">
         <div class="container mt-5">
@@ -522,28 +556,33 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button term-title collapsed" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#term1" aria-expanded="true" aria-controls="term1">
-                                    <div class="accordion-text-header">What are the aspects to be studied?</div> 
+                                    data-bs-toggle="collapse" data-bs-target="#term1" aria-expanded="true"
+                                    aria-controls="term1">
+                                    <div class="accordion-text-header">What are the aspects to be studied?</div>
                                 </button>
                             </h2>
                             <div id="term1" class="accordion-collapse collapse show term-color" data-bs-parent="#terms">
                                 <div class="accordion-body term-body">
                                     <ul class="lh-base">
-                                        <li>Analyze local or international cryptocurrency’s profile, and learn about tokenomy. 
+                                        <li>Analyze local or international cryptocurrency’s profile, and learn about
+                                            <b>tokenomy.</b>
                                         </li>
-                                        <li>Determine the selected cryptocurrency’s roadmap, trading plan, future prospects, 
-                                            and investment strategies.
-                                            </li>
-                                        <li>Find out the technical analysis, also the risks and strategies of the cryptocurrency.
-                                            </li>
+                                        <li>Determine the selected <b>cryptocurrency’s roadmap, trading plan, future
+                                                prospects,
+                                                and investment strategies.</b>
+                                        </li>
+                                        <li>Find out the technical analysis, also the <b>risks and strategies</b> of the
+                                            cryptocurrency.
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item mt-3 border">
                             <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button term-title collapsed collapsed" aria-expanded="true" aria-controls="term2" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#term2">
+                                <button class="accordion-button term-title collapsed collapsed" aria-expanded="true"
+                                    aria-controls="term2" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#term2">
                                     <div class="accordion-text-header">Terms & Conditions</div>
                                 </button>
                             </h2>
@@ -551,21 +590,38 @@
                                 <div class="accordion-body term-body">
                                     <ul>
                                         <li>
-                                            The competition consists of 2 stages. Elimination may occur depending on
-                                            submissions on each stage.
+                                            Before participating, you can get the <b>complete overview of the
+                                                Cryptocurrency
+                                                Analysis competition</b> by contacting our team through WhatsApp.
                                         </li>
                                         <li>
-                                            After completing the registration payment, participants are entitled to:
+                                            You can continue to register by <b>completing your details and submitting
+                                                your payment receipt</b> in the registration form.
+
+                                        </li>
+                                        <li>
+                                            <b>Confirmation email</b> will be sent after you complete the registration
+                                            along with the payment.
+                                        </li>
+                                        <li>
+                                            <b>Our team will contact you</b> shortly after to ensure you as a
+                                            participant are entitled to:
                                             <ul>
-                                                <li>Receive a general learning guide about cryptocurrency  and some tips on searching information on cryptocurrency from PanenSAHAM.</li>
-                                                <li>Discuss around cryptocurrency analysis on WhatsApp discussion group with the PanenSAHAM mentors</li>
+                                                <li>Receive a <b>general learning guide about cryptocurrency</b> and
+                                                    some tips on searching information on cryptocurrency from
+                                                    PanenSAHAM.</li>
+                                                <li>Discuss around cryptocurrency analysis on <b>WhatsApp discussion
+                                                        group</b> with the PanenSAHAM mentors</li>
                                             </ul>
                                         </li>
                                         <li>
-                                            Participants should choose a local or international cryptocurrency, create an investment analysis of it, and submit the analysis deck here on our website.
+                                            Participants should choose a local or international cryptocurrency, create
+                                            an investment analysis of it, and <b>submit the analysis deck here on our
+                                                website.</b>
                                         </li>
                                         <li>
-                                            The Top 8 participants with the best analysis decks will be selected to present their analysis to the judges.
+                                            The <b>Top 8 participants</b> with the best analysis decks <b>will be
+                                                selected to present their analysis</b> to the judges.
                                         </li>
                                     </ul>
                                 </div>
@@ -576,14 +632,15 @@
                         <div class="row justify-content-center pt-3">
                             <div class="col-md-10">
                                 <div class="text-center">
-                                    
+
                                     <h3 style="font-weight: 600; color: #ffffff;">
                                         Submit the cryptocurrency analysis deck
                                     </h3>
                                     <h3 style="font-weight: 600; color: #FCCD86;">
                                         no later than March 25th, 2022 (11.59 PM).
                                     </h3>
-                                    <a href="https://bit.ly/allincompetition2021-registration" style="font-weight: 600 !important; color: #243972 !important;" target="_blank"
+                                    <a href="https://bit.ly/allincompetition2021-registration"
+                                        style="font-weight: 600 !important; color: #243972 !important;" target="_blank"
                                         class="btn btn-light mb-4">Submit Your Analysis
                                     </a>
                                     <h2 style="font-weight: 700; color: #fff;">JUDGED BY THE EXPERTS
@@ -592,53 +649,38 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-3 justify-content-center align-items-center">
-                            <div class="col-md-3 mb-3">
-                                <img src="assets/img/crypto/Timothy.webp" width="100%">
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <img src="assets/img/crypto/Steven.webp" width="100%">
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <img src="assets/img/crypto/Matt.webp" width="100%">
-                            </div>
-                            <!-- <div class="col-md-5">
-                                <div class="desc " style="color:#EA9D38;">
-                                    <b>1 Winner will get:</b>
-                                </div>
-                                <div class="bg-primary mb-1 p-3 list-allin">
-                                    Cash prize IDR 1,500,000
-                                </div>
-                                <div class="bg-primary mb-1 p-3 list-allin">
-                                    Certificate associating your participation
-                                </div>
-                            </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3 justify-content-center align-items-center g-5">
+                <div class="col-md-4 p-md-5 mb-3">
+                    <img src="assets/img/crypto/Timothy.webp" width="100%">
+                    <div class="card judges">
+                        <div class="card-body p-4" style="text-align: center;">
+                            More than 4 years of experience in the stock market and 1 year in the crypto
+                            world.
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="prizes">
-        <div class="container mt-5">
-            <div class="row justify-content-center pt-3">
-                <div class="col-md-10">
-                    <div class="text-center">
-                        <h2 class="color2">PRIZES
-                        </h2>
-                        <h5 class="desc">
-                            All participants will get a certificate associating your participation in the <br> ThinkTank
-                            Battle 2021.
-                        </h5>
+                <div class="col-md-4 p-md-5 mb-3">
+                    <img src="assets/img/crypto/Matt.webp" width="100%">
+                    <div class="card judges">
+                        <div class="card-body p-4" style="text-align: center;">
+                            More than 10 years in the finance banking sector.
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-3 justify-content-center align-items-center">
-                <div class="col-md-3 mb-3">
-                    <img src="assets/img/prizes.webp" width="100%">
+                <div class="col-md-4 p-md-5 mb-3">
+                    <img src="assets/img/crypto/Steven.webp" width="100%">
+                    <div class="card judges">
+                        <div class="card-body style=" style="text-align: center;">
+                            More than 3 years of experience in the stock market and has been researching
+                            cryptocurrency since 2020.
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-5">
+
+                <!-- <div class="col-md-5">
                     <div class="desc " style="color:#EA9D38;">
                         <b>1 Winner will get:</b>
                     </div>
@@ -648,24 +690,59 @@
                     <div class="bg-primary mb-1 p-3 list-allin">
                         Certificate associating your participation
                     </div>
-                    <div class="bg-primary p-3 list-allin">
-                        Monika PanenSAHAM trading apps 6-months subscription
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <img src="assets/img/crypto/Lengkung atas (kuning).webp" width="100%"
+        style="margin-top: -12%; position: relative; z-index: 3;">
+    <div id="prizes">
+        <div class="container mt-10">
+            <div class="row justify-content-center pt-3">
+                <div class="col-md-10">
+                    <div class="text-center">
+                        <h2 style="color: #263774;">PRIZES
+                        </h2>
+                        <h5 style="font-weight: 700;" class="color2">
+                            All participants will get a certificate associating your participation in the <br> ThinkTank
+                            Battle 2021.
+                        </h5>
                     </div>
-                    <div class="bg-info p-3" style="text-align: justify;">
-                        Monika PanenSAHAM is an application that makes it simpler for you to filter stocks, according to
-                        your stock investment
-                        and trading style. It provides graph information, screening and alerts in real time. By winning
-                        the ThinkTank Battle
-                        2021, you will get a free 6-months subscription worth IDR 1,100,000 to access Technical and
-                        Fundamental Analysis of
-                        stocks.
+                </div>
+            </div>
+            <div class="row mt-3 justify-content-center align-items-center">
+                <div class="col-md-4 mb-3">
+                    <img src="assets/img/crypto/1st winner.webp" width="100%">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="assets/img/crypto/2nd winner.webp" width="100%">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="assets/img/crypto/3rd winner.webp" width="100%">
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-8">
+                    <div class="row g-0 no-gutters align-items-end">
+                        <div class="col-4">
+                            <img src="assets/img/crypto/Mr.krip.png" width="100%">
+                        </div>
+                        <div class="col-8">
+                            <div class="mister-krip-dua">
+                                Mr.Krip is an application developed by PanenSAHAM that is intended to help traders
+                                in the digital world, especially crypto (IDR and USDT pairs), forex and commodities.
+                                It provides various charts, filters, and alerts in real time. By winning the
+                                competition,
+                                you will get a free 12-months subscription of Mr.Krip worth IDR 675,000.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <img src="assets/img/list atas .webp" width="100%" style="margin-top: -10%;">
 
     <div id="timeline">
         <div class="container mb-5">
@@ -685,8 +762,8 @@
                             <div class="circle">1</div>
                         </div>
                         <div class="col-10 text-white" style="margin-left:-5%">
-                            <h5><i class="fas fa-calendar-alt me-2"></i> 5 November</h5>
-                            Registration open
+                            <h5><i class="fas fa-calendar-alt me-2"></i> 7 March</h5>
+                            <h5 class="timeline-desc">Registration & Submission Open</h5>
                         </div>
                     </div>
 
@@ -705,8 +782,8 @@
                     <!--second section-->
                     <div class="row align-items-center justify-content-end how-it-works d-flex">
                         <div class="col-10 text-white text-end" style="margin-right:-5%">
-                            <h5>1 December <i class="fas fa-calendar-alt ms-2"></i></h5>
-                            Registration close
+                            <h5>23 March (12:00 PM WIB) <i class="fas fa-calendar-alt ms-2"></i></h5>
+                            <h5 class="timeline-desc">Registration close</h5>
                         </div>
                         <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
                             <div class="circle">2</div>
@@ -731,8 +808,8 @@
                             <div class="circle">3</div>
                         </div>
                         <div class="col-10 text-white" style="margin-left:-5%">
-                            <h5><i class="fas fa-calendar-alt me-2"></i> 3 December</h5>
-                            Opening day
+                            <h5><i class="fas fa-calendar-alt me-2"></i> 25 March (11:59 PM WIB)</h5>
+                            <h5 class="timeline-desc">Submission Close</h5>
                         </div>
                     </div>
                     <div class="row timeline">
@@ -749,8 +826,8 @@
                     <!--second section-->
                     <div class="row align-items-center justify-content-end how-it-works d-flex">
                         <div class="col-10 text-white text-end" style="margin-right:-5%">
-                            <h5>6 December - 16 December <i class="fas fa-calendar-alt ms-2"></i></h5>
-                            Competition & coaching period
+                            <h5>31 March <i class="fas fa-calendar-alt ms-2"></i></h5>
+                            <h5 class="timeline-desc">Top 8 Announcement</h5>
                         </div>
                         <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
                             <div class="circle">4</div>
@@ -773,12 +850,12 @@
                             <div class="circle">5</div>
                         </div>
                         <div class="col-10 text-white" style="margin-left:-5%">
-                            <h5><i class="fas fa-calendar-alt me-2"></i> 12 December</h5>
-                            Stage 1 Checkpoint (elimination may occur)
+                            <h5><i class="fas fa-calendar-alt me-2"></i> 4 April (05:30 PM WIB)</h5>
+                            <h5 class="timeline-desc">Top 8 Presentation Day</h5>
                         </div>
                     </div>
-                    <div class="row timeline">
-                        <div class="col-2">
+                    <div style="color: #ea9d38 !important;" class="row timeline">
+                        <div style="color: #ea9d38 !important;" class="col-2">
                             <div class="corner top-right"></div>
                         </div>
                         <div class="col-8">
@@ -791,14 +868,17 @@
 
                     <div class="row align-items-center justify-content-end how-it-works d-flex">
                         <div class="col-10 text-white text-end" style="margin-right:-5%">
-                            <h5>17 December <i class="fas fa-calendar-alt ms-2"></i></h5>
-                            Final submission
+                            <h5>
+                                9 April
+                                <i class="fas fa-calendar-alt ms-2"></i>
+                            </h5>
+                            <h5 class="timeline-desc">Winner announcement at ANNIFEST 2022</h5>
                         </div>
                         <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
                             <div class="circle">6</div>
                         </div>
                     </div>
-                    <div class="row timeline">
+                    <!-- <div class="row timeline">
                         <div class="col-2">
                             <div class="corner right-bottom"></div>
                         </div>
@@ -838,15 +918,16 @@
                         <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
                             <div class="circle">8</div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
-    <img src="assets/img/List bawah .webp" width="100%" style="margin-top: -8%; position: relative; z-index: 3;">
+    <img src="assets/img/crypto/Lengkung bawah (kuning).webp" width="100%"
+        style="margin-top: -3%; position: relative; z-index: 3;">
 
     <div id="faq" style="position: relative; z-index: 1;">
-        <div class="container mb-5">
+        <div class="container mb-5 mt-5">
             <div class="row justify-content-center">
                 <div class="col-md-12 text-center">
                     <h2 style="color: #fff; font-weight: 700;">FAQ
@@ -859,18 +940,19 @@
                                 <button class="accordion-button term-title-blue collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#faq1">
                                     <div class="accordion-text-header">How do I apply?</div>
-                                    
+
                                 </button>
                             </h2>
                             <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqs">
                                 <div class="accordion-body term-body">
                                     <p>
-                                        This competition is for individual participants only. Click on the registration 
-                                        button on the homepage or at the top right of this page. You will be redirected 
-                                        to a Google Form where you can fill out the data 
+                                        This competition is for individual participants only. Click on the registration
+                                        button on the homepage or at the top right of this page. You will be redirected
+                                        to a Google Form where you can fill out the data
                                         <br>
 
-                                        Before signing up, be sure to <b> read every detail </b> on this page including the aspects 
+                                        Before signing up, be sure to <b> read every detail </b> on this page including
+                                        the aspects
                                         and the terms and conditions of the competition.
                                     </p>
                                 </div>
@@ -899,8 +981,10 @@
                                         </ul>
                                     </b> -->
                                     <p>
-                                        After you register, we will shortly contact you through WhatsApp for a confirmation 
-                                        and send you an email where the payment details are stated. Fees are non-refundable.
+                                        After you register, we will shortly contact you through WhatsApp for a
+                                        confirmation
+                                        and send you an email where the payment details are stated. Fees are
+                                        non-refundable.
                                     </p>
                                 </div>
                             </div>
@@ -915,26 +999,27 @@
                             <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqs">
                                 <div class="accordion-body term-body">
                                     <p>
-                                        The program is eligible for students from grade 9 to 12. As for rules, 
-                                        we have set requirements that include: 
+                                        The program is eligible for students from grade 9 to 12. As for rules,
+                                        we have set requirements that include:
                                     </p>
                                     <ul>
                                         <li>
                                             Participants have to join individually.
                                         </li>
                                         <li>
-                                            Participants are required to join a WhatsApp group where they can discuss 
-                                            the cryptocurrency scene with the mentors from PanenSAHAM, and also get 
+                                            Participants are required to join a WhatsApp group where they can discuss
+                                            the cryptocurrency scene with the mentors from PanenSAHAM, and also get
                                             announcements related to the competition.
                                         </li>
                                         <li>
-                                            There will be 2 stages during the competition: submission stage where 
-                                            all participants have to submit their analysis on selected cryptocurrency 
-                                            based on the brief. Then the judges will choose Top 8 participants to continue 
+                                            There will be 2 stages during the competition: submission stage where
+                                            all participants have to submit their analysis on selected cryptocurrency
+                                            based on the brief. Then the judges will choose Top 8 participants to
+                                            continue
                                             presenting their analysis to the judges in order to win the competition.
                                         </li>
                                         <li>
-                                            Any act of foul play is intolerable and participants will be sanctioned 
+                                            Any act of foul play is intolerable and participants will be sanctioned
                                             if there's any proof of cheating.
                                         </li>
                                     </ul>
@@ -954,9 +1039,11 @@
                                         The competition is held virtually, from the process registration, document
                                         submission, to the judging process.
                                         <br>
-                                        We use the <b>WhatsApp Group</b> for participants after completing the registration 
-                                        payment to discuss the cryptocurrency scene, and for the Top 8 announcement. <b>Zoom</b>
-                                        will also be used during the presentation day and winner announcement. 
+                                        We use the <b>WhatsApp Group</b> for participants after completing the
+                                        registration
+                                        payment to discuss the cryptocurrency scene, and for the Top 8 announcement.
+                                        <b>Zoom</b>
+                                        will also be used during the presentation day and winner announcement.
                                     </p>
                                 </div>
                             </div>
@@ -971,7 +1058,8 @@
                             <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqs">
                                 <div class="accordion-body term-body">
                                     <p>
-                                        No, you can not apply in a group. This competition is for individual participants only.
+                                        No, you can not apply in a group. This competition is for individual
+                                        participants only.
                                     </p>
                                 </div>
                             </div>
@@ -986,125 +1074,68 @@
                             <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqs">
                                 <div class="accordion-body term-body">
                                     <p>
-                                        Now that the cryptocurrency is booming and gaining more awareness, 
-                                        you can have new knowledge and also deepen your insights around it. 
-                                        You will also get your work reviewed by professionals so you can note 
-                                        the room of improvement of your knowledge & analysis skills. 
+                                        Now that the cryptocurrency is booming and gaining more awareness,
+                                        you can have new knowledge and also deepen your insights around it.
+                                        You will also get your work reviewed by professionals so you can note
+                                        the room of improvement of your knowledge & analysis skills.
                                         <br>
-                                        Your experience here is also significant for your CV and resume building, 
-                                        and it also strengthens your credibility and brand for later when you are 
-                                        pursuing education in the field you're passionate about. 
+                                        Your experience here is also significant for your CV and resume building,
+                                        and it also strengthens your credibility and brand for later when you are
+                                        pursuing education in the field you're passionate about.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="accordion-item mt-2 border">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button term-title collapsed collapsed" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq7">
-                                    Can I form a team with my friends from different schools?
-                                </button>
-                            </h2>
-                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqs">
-                                <div class="accordion-body term-body">
-                                    <p>
-                                        Yes, you can.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item mt-2 border">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button term-title collapsed collapsed" type="button"
-                                    data-bs-toggle="collapse" data-bs-target="#faq8">
-                                    What can I benefit from this experience?
-                                </button>
-                            </h2>
-                            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqs">
-                                <div class="accordion-body term-body">
-                                    <p>
-                                        Now that the investment field is booming and gaining more awareness, you can
-                                        have new knowledge and also deepen your
-                                        insights around investments, especially stocks. You will also get your work
-                                        reviewed by professionals so you can note
-                                        the room of improvement of your project.
-                                        Your experience here is also significant for your CV and resume building, and it
-                                        also strengthens your credibility and
-                                        brand for later when you are pursuing education in the field you’re passionate
-                                        about.
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
             <div id="testimonials">
                 <div class="row mt-5 justify-content-center">
-                    <div class="col-md-10 mt-5 mb-4 text-center">
-                        <h2 class="color2">TESTIMONIAL
+                    <div class="col-md-10 mt-8 text-center">
+                        <h2 style="font-weight: 700; color: #fff;">TESTIMONIALS
                         </h2>
-                        <h3 style="font-weight: 700 !important; color: #243972 !important;">
+                        <h3 class="mb-4" style="font-weight: 700 !important; color: #243972 !important;">
                             From “ALL-in Investment Analysis Challenge with PanenSAHAM”<br>
                         </h3>
-                        <h5>Thank you very much for this new experience,
+                        <h5 class="testimoni-text">Thank you very much for this new experience,
                             my knowledge of investing truly increased after this challenge.
                         </h5>
-                    </div>
-                    <div class="col-md-10 mt-5 mb-4 text-center">
-                        <h4 style="color: #fff;">
+                        <h5 class="testimoni-person mb-4">
+                            - William Susanto
+                        </h5>
+                        <h5 class="testimoni-text">
                             The event was well organized and the mentors also were really helpful throughout
                             the competition. Everything was well informed and easily understood.
                             I did not have to face much difficulties when joining this competition.<br>
-                        </h4>
-                        <h5style="font-weight: 700 !important; color: #243972 !important;" >
+                        </h5>
+                        <h5 class="testimoni-person mb-4">
                             - Samuel Christian Hosea
                         </h5>
+                        <h5 class="testimoni-text">
+                            I had a great time attending this competition. It was really enjoyable to learn
+                            from the mentors and I believe what I've learned will be very useful to me.<br>
+                        </h5>
+                        <h5 class="testimoni-person mb-4">
+                            - Odelyn Xie
+                        </h5>
+
                     </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-9">
-                        <div class="row">
-                            <div class="col text-center icon-img">
-                                <img src="assets/img/Icon_1.png" class="mr-auto ml-auto"><br>
-                                <p class="icon-desc">100% Students placed<br>at target universities</p>
-                            </div>
-                            <div class="col text-center icon-img">
-                                <img src="assets/img/Icon_2.png" class="mr-auto ml-auto"><br>
-                                <p class="icon-desc">More than 40<br>School Clients</p>
-                            </div>
-                            <div class="col text-center icon-img">
-                                <img src="assets/img/Icon_3.png" class="mr-auto ml-auto"><br>
-                                <p class="icon-desc">More than 1,000<br>Esays Reviewed</p>
-                            </div>
-                        </div>
-                        <div class="row mt-md-4">
-                            <div class="col text-center icon-img">
-                                <img src="assets/img/Icon_4.png" class="mr-auto ml-auto"><br>
-                                <p class="icon-desc">More than 50<br>Corporate Partners</p>
-                            </div>
-                            <div class="col text-center icon-img">
-                                <img src="assets/img/Icon_5.png" class="mr-auto ml-auto"><br>
-                                <p class="icon-desc">150+ Point SAT<br>Score Improvement</p>
-                            </div>
-                            <div class="col text-center icon-img">
-                                <img src="assets/img/Icon_6.png" class="mr-auto ml-auto"><br>
-                                <p class="icon-desc">More than 1,500<br>Event Participants</p>
-                            </div>
-                        </div>
+                    <div class="col-md-10 text-center">
+                        <a href="https://bit.ly/allincompetition2021-registration" target="_blank"
+                            class="btn btn-warning">
+                            Register as Participants
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <img src="assets/img/list atas .webp" width="100%" style="margin-top: -10%; position: relative; z-index: -1;">
 
-    <footer style="margin-top:-3%">
+    <footer>
         <div class="container pb-4">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <img src="assets/img/logo.png" width="125px" alt="">
+                    <img src="assets/img/crypto/ALL-in Eduspace Logo (white).png" width="125px" alt="">
                 </div>
                 <div class="col-md-3 mb-3">
                     <i class="fas fa-globe fa-fw"></i> <a href="https://all-inedu.com"
@@ -1157,56 +1188,12 @@
     -->
     <script>
         // $('#register').find('.stiky-allin').hide()
+        $('.nav-item a').css('color', 'white')
 
         $(window).scroll(function () {
             var scroll = $(window).scrollTop();
             // menus 
-            if (scroll >= 0 & scroll <= 750) {
-                $('#mhome').addClass('active')
-                $('#mcompetition').removeClass('active')
-                $('#mprizes').removeClass('active')
-                $('#mtimeline').removeClass('active')
-                $('#mfaq').removeClass('active')
-                $('#testimonial').removeClass('active')
-            } else if (scroll >= 1300 & scroll <= 1500) {
-                $('#mhome').removeClass('active')
-                $('#mcompetition').addClass('active')
-                $('#mprizes').removeClass('active')
-                $('#mtimeline').removeClass('active')
-                $('#mfaq').removeClass('active')
-                $('#testimonial').removeClass('active')
-            } else if (scroll >= 1550 & scroll <= 2500) {
-                $('#mhome').removeClass('active')
-                $('#mcompetition').removeClass('active')
-                $('#mprizes').addClass('active')
-                $('#mtimeline').removeClass('active')
-                $('#mfaq').removeClass('active')
-                $('#testimonial').removeClass('active')
-            } else if (scroll >= 2500 & scroll <= 3400) {
-                $('#mhome').removeClass('active')
-                $('#mcompetition').removeClass('active')
-                $('#mprizes').removeClass('active')
-                $('#mtimeline').addClass('active')
-                $('#mfaq').removeClass('active')
-                $('#testimonial').removeClass('active')
-            } else if (scroll >= 3400) {
-                $('#mhome').removeClass('active')
-                $('#mcompetition').removeClass('active')
-                $('#mprizes').removeClass('active')
-                $('#mtimeline').removeClass('active')
-                $('#mfaq').addClass('active')
-                $('#testimonial').removeClass('active')
-            }
-            else if (scroll >= 3400) {
-                $('#mhome').removeClass('active')
-                $('#mcompetition').removeClass('active')
-                $('#mprizes').removeClass('active')
-                $('#mtimeline').removeClass('active')
-                $('#mfaq').removeClass('active')
-                $('#testimonial').addClass('active')
 
-            }
-            // console.log(scroll)
             if (scroll >= 200) {
                 $('#register').find('.stiky-allin').fadeIn('slow')
                 $('#nav').removeClass('bg-navbar1')
@@ -1215,6 +1202,7 @@
                 $('#subBtn').removeClass('d-md-none')
                 $('#regFake').hide();
                 $('#regFake1').hide();
+                $('.nav-item a').css('color', 'black')
             } else {
                 $('#register').find('.stiky-allin').fadeOut('fast')
                 $('#nav').removeClass('bg-navbar2 shadow')
@@ -1223,9 +1211,56 @@
                 $('#subBtn').addClass('d-md-none')
                 $('#regFake').show();
                 $('#regFake1').show()
-                // $('#regFake').removeClass('active')
-                // $('#regFake1').removeClass('active')
+                $('.nav-item a').css('color', 'white')
             }
+
+            if (scroll >= 0 & scroll <= 750) {
+                $('#mhome').addClass('active')
+                $('#mcompetition').removeClass('active')
+                $('#mprizes').removeClass('active')
+                $('#mtimeline').removeClass('active')
+                $('#mfaq').removeClass('active')
+                $('#testimonial').removeClass('active')
+            } else if (scroll >= 1000 & scroll <= 1700) {
+                $('#mhome').removeClass('active')
+                $('#mcompetition').addClass('active')
+                $('#mprizes').removeClass('active')
+                $('#mtimeline').removeClass('active')
+                $('#mfaq').removeClass('active')
+                $('#testimonial').removeClass('active')
+            } else if (scroll >= 2300 & scroll <= 3000) {
+                $('#mhome').removeClass('active')
+                $('#mcompetition').removeClass('active')
+                $('#mprizes').addClass('active')
+                $('#mtimeline').removeClass('active')
+                $('#mfaq').removeClass('active')
+                $('#testimonial').removeClass('active')
+            } else if (scroll >= 3700 & scroll <= 4700) {
+                $('#mhome').removeClass('active')
+                $('#mcompetition').removeClass('active')
+                $('#mprizes').removeClass('active')
+                $('#mtimeline').addClass('active')
+                $('#mfaq').removeClass('active')
+                $('#testimonial').removeClass('active')
+            } else if (scroll >= 4700 & scroll <= 5100) {
+                $('#mhome').removeClass('active')
+                $('#mcompetition').removeClass('active')
+                $('#mprizes').removeClass('active')
+                $('#mtimeline').removeClass('active')
+                $('#mfaq').addClass('active')
+                $('#testimonial').removeClass('active')
+            }
+            else if (scroll >= 5100) {
+                $('#mhome').removeClass('active')
+                $('#mcompetition').removeClass('active')
+                $('#mprizes').removeClass('active')
+                $('#mtimeline').removeClass('active')
+                $('#mfaq').removeClass('active')
+                $('#testimonial').addClass('active')
+
+            }
+
+            // console.log(scroll)
         })
 
         $('.how-it-works').each(function () {

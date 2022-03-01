@@ -1,3 +1,51 @@
+.mister-krip{
+    border-radius: 4vh;
+    background-color: #ea9d38;
+    color: #fff;
+    font-size: 14px;
+    padding: 2vh;
+    font-weight: 500;
+}
+
+.mister-krip-dua{
+    border-top-right-radius: 4vh;
+    border-bottom-right-radius: 4vh;
+    background-color: #ea9d38;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 2vh;
+    font-weight: 500;
+}
+
+.judges{
+    border-radius: 20px !important;
+    font-size: 15px;
+    background-color: #FDDBB5;
+    color: #263774;
+    font-weight: 600;
+    margin-top: -5px;
+    height: 100px;
+}
+
+.krip{
+    padding-left: 5%;
+}
+
+.testimoni-person{
+    font-weight: 700 !important;
+    color: #243972 !important;
+}
+
+.testimoni-text{
+    font-style: italic;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.timeline-desc{
+    color: #263774;
+}
+
 .term-title-blue{
     font-size: 20px !important;
     background: #263774 !important;
